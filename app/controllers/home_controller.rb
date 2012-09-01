@@ -1,3 +1,3 @@
 class HomeController < ApplicationController
-  def index; render :text => "tryagann.com" end
+  def index; end
 end
