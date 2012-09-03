@@ -6,6 +6,7 @@ set :repository,  "git@github.com:kgann/tryagann"
 
 set :scm, :git
 set :user, "kgann"
+set :use_sudo, false
 set :copy_cache, "#{ENV['HOME']}/deploy/#{application}"
 set :copy_exclude, ['.git']
 set :deploy_to, "/var/www/#{application}"
