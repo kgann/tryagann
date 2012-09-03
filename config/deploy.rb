@@ -5,6 +5,11 @@ set :application, "tryagann"
 set :repository,  "git@github.com:kgann/tryagann"
 
 set :scm, :git
+set :user, "kgann"
+set :copy_cache, "#{ENV['HOME']}/deploy/#{application}"
+set :copy_exclude, ['.git']
+set :deploy_to, "/var/www/#{application}"
+set :deploy_via, :copy
 
 role :web, "199.19.118.222", :primary => true
 role :app, "199.19.118.222"
