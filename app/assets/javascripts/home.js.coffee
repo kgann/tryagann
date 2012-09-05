@@ -2,9 +2,9 @@ do ->
   $ ->
     $('#logo').hover ->
       $(this).animate
-        'marginTop': '-10'
-        200
+        'top': '0'
+        50
     , ->
       $(this).animate
-        'marginTop': '0'
-        100
+        'top': '-10'
+        200
