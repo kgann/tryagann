@@ -11,28 +11,76 @@
  *= require_self
  *= require_tree .
  */
- 
-body.home{
+
+ /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
   margin:0;
-  padding:0;
-  background: url('/assets/diamond-bg.gif') repeat;
+  background-color:#464646;
 }
 
-#header_wrapper{
+#top_panel{
   width:100%;
-  height:82px;
-  border-bottom:1px solid #111;
-  background: url('/assets/header-bg.png') repeat bottom center;
+  height:0px;
+  background-color:#464646;
+  border-bottom:1px solid #000;
+  position:relative;
+  z-index:100;
+  -moz-box-shadow: 0 0 3px 1px #444;
+  -webkit-box-shadow: 0 0 3px 1px #444;
+  box-shadow: 0 0 3px 1px #444;
 }
 
-#header{
-  width:975px;
-  height:82px;
-  margin:0 auto;
+#panel{
+  height:80px;
+  width:100%;
+  background:transparent url('/assets/diamond-bg.gif') repeat;
+  overflow:visible;
+  -moz-box-shadow: 0 0 2px 2px #222;
+  -webkit-box-shadow: 0 0 2px 2px #222;
+  box-shadow: 0 0 2px 2px #222;
 }
 
-#header #logo{
+#menu{
+  width:700px;
+  margin:-82px auto;
+  position:relative;
+}
+
+#logo{
+  width:300px;
   position:absolute;
-  top:-10px;
-  width:auto;
+  margin:-10px 0 0 200px;
+}
+
+#left, #right{
+  top:17px;
+}
+
+#left{
+  position:absolute;
+  left:0;
+}
+
+#right{
+  position:absolute;
+  right:0;
+}
+
+.content ul{
+  float:left;
+}
+
+.content ul li{
+  float:left;
+}
+
+.content ul li a{
+  float:left;
+  padding:10px;
+  color:#33302E;
+  text-decoration:none;
+  font-size:20px;
+  font-family:helvetica;
 }
