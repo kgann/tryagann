@@ -1,14 +1,13 @@
 #top_panel
-#panel
+#panel.diamond
 #menu
-  #left
-    .content
-      %ul
-        %li=link_to :resume, root_path, :alt => 'resume'
-        %li=link_to :contact, root_path, :alt => 'contact'
+  #left.content
+    %ul
+      %li=link_to :resume, root_path, :alt => 'resume'
+      %li=link_to :contact, root_path, :alt => 'contact'
   #logo=link_to image_tag('tryagann-logo.png'), root_path, :alt => 'TryAGann.com'
-  #right
-    .content
-      %ul
-        %li=link_to :github, root_path, :alt => 'github.com/kgann'
-        %li=link_to :linkedin, root_path, :alt => 'linkedin.com/kgann'
+  #right.content
+    %ul
+      %li=link_to :github, root_path, :alt => 'github.com/kgann'
+      %li=link_to :linkedin, root_path, :alt => 'linkedin.com/kgann'
+#main.diamond
