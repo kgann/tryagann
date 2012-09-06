@@ -82,10 +82,12 @@ body{
 .content ul li a{
   float:left;
   padding:10px;
-  color:#33302E;
   text-decoration:none;
   font-size:20px;
-  font-family:helvetica;
+  font: bold 18px Rockwell, "Rockwell Std", "American Typewritter", Georgia, serif;
+  text-shadow: 1px 1px 0 white;
+  color: #222;
+  margin: 0 0 10px;
 }
 
 #main{
